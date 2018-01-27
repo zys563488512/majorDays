@@ -68,7 +68,19 @@ class Constant: NSObject {
         
         defaults.synchronize()
     }
-    
+    //设置主题背景
+    class func setThemeBGImage(imageName:String) {
+        let defaults = UserDefaults.standard
+        defaults.set(imageName, forKey: "themeImageName")
+        defaults.synchronize()
+    }
+    //获取当前设置的主题背景
+   class func getThemeBGImage() -> String {
+        let defaults = UserDefaults.standard
+
+        let bgName = defaults.object(forKey: "themeImageName") as! String
+        return bgName;
+    }
     class func getStringSizeMaxWidth(_ str:String, font:Int, maxWidth:CGFloat) -> CGSize
     {
         let attrs = [NSAttributedStringKey.font : UIFont.systemFont(ofSize: CGFloat(font))]
@@ -78,7 +90,6 @@ class Constant: NSObject {
         return CGSize(width: nw, height: nh)
     }
 }
-
 //let lanting_xi = "FZLanTingHeiS-EL-GB"
 //
 //let iOS7 = (UIDevice.current.systemVersion as NSString).doubleValue < Double(8.0)
@@ -106,7 +117,7 @@ let LearnCloud_APPID = "dFUMgSWcdxlSBEOpWH4gCrVA-gzGzoHsz"
 let LearnCloud_APPKEY = "RruAhf7oh0hAoLBr67odHk5e"
 
 let service = "com.zys.majorDays"
-let mainTheme = "scenery_bg1"
+let mainTheme = "scenery_bg3"
 
 enum FontFmailyName: String {
     case AmericanTypewriter = "AmericanTypewriter"

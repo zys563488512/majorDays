@@ -21,7 +21,8 @@ class MDThemeListController: MDBaseViewController,UITableViewDataSource,UITableV
         self.leftBarButton.addTarget(self, action: #selector(self.backEvent(btn:)), for: .touchUpInside)
         self.dataArray = [
             ["themeTypeId":"1001","themeTypeName":"风景",
-                "themeList":[["themeId":"10011","themeName":"scenery_bgName2","themeImageUrl":"scenery_bg2"],["themeId":"10012","themeName":"scenery_bgName1","themeImageUrl":"scenery_bg1"]]],
+                "themeList":[["themeId":"10011","themeName":"scenery_bgName2","themeImageUrl":"scenery_bg2"],["themeId":"10012","themeName":"scenery_bgName1","themeImageUrl":"scenery_bg1"],
+                    ["themeId":"10013","themeName":"scenery_bgName3","themeImageUrl":"scenery_bg3"]]],
             ["themeTypeId":"1002","themeTypeName":"萌宠","themeList":[]],
             ["themeTypeId":"1003","themeTypeName":"节日","themeList":[["themeId":"10021","themeName":"festival_bgName1","themeImageUrl":"festival_bg1"]]],
             ["themeTypeId":"1004","themeTypeName":"壁纸","themeList":[["themeId":"10021","themeName":"wallpaper_bgName1","themeImageUrl":"wallpaper_bg1"]]],
@@ -41,6 +42,11 @@ class MDThemeListController: MDBaseViewController,UITableViewDataSource,UITableV
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.view.addSubview(self.collectionView)
+        
+        //默认选中的section，row
+        let defaultSelectCell = IndexPath(row: 0, section: 0)
+        
+        self.tableView.selectRow(at: defaultSelectCell, animated: true, scrollPosition: .none)
     }
     /*
      * UITableViewDelegate,UICollectionViewDataSource
@@ -96,7 +102,9 @@ class MDThemeListController: MDBaseViewController,UITableViewDataSource,UITableV
         
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let dict = self.themeDataArray[indexPath.row] as! NSDictionary
+        Constant.setThemeBGImage(imageName: dict["themeImageUrl"] as! String)
+        self.bgImageView.image = UIImage(named: Constant.getThemeBGImage())
     }
     @objc func backEvent(btn:UIButton) {
         self.dismiss(animated: true, completion: nil)

@@ -50,6 +50,11 @@
 		42A5D824201385DA00006B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A5D822201385DA00006B27 /* LaunchScreen.storyboard */; };
 		42A5D84A2013869500006B27 /* MDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5D8492013869500006B27 /* MDBaseViewController.swift */; };
 		42A5D84F2013874100006B27 /* MDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A5D84E2013874100006B27 /* MDHomeViewController.swift */; };
+		42E3D573201CBE2F008928CF /* scenery_bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E3D571201CBE2F008928CF /* scenery_bg3@2x.png */; };
+		42E3D574201CBE2F008928CF /* scenery_bg3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E3D572201CBE2F008928CF /* scenery_bg3@3x.png */; };
+		42E3D577201CBF31008928CF /* scenery_bgName3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E3D575201CBF31008928CF /* scenery_bgName3@2x.png */; };
+		42E3D578201CBF31008928CF /* scenery_bgName3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42E3D576201CBF31008928CF /* scenery_bgName3@3x.png */; };
+		42E3D580201CD7F5008928CF /* MDLunarOrSolar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E3D57F201CD7F5008928CF /* MDLunarOrSolar.swift */; };
 		42EE166120186979004DCD4F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE165E20186979004DCD4F /* SVProgressHUD.m */; };
 		42EE166220186979004DCD4F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE165F20186979004DCD4F /* SVIndefiniteAnimatedView.m */; };
 		42EE166320186979004DCD4F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42EE166020186979004DCD4F /* SVProgressHUD.bundle */; };
@@ -127,6 +132,11 @@
 		42A5D835201385DA00006B27 /* majorDaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = majorDaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A5D8492013869500006B27 /* MDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBaseViewController.swift; sourceTree = "<group>"; };
 		42A5D84E2013874100006B27 /* MDHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDHomeViewController.swift; sourceTree = "<group>"; };
+		42E3D571201CBE2F008928CF /* scenery_bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scenery_bg3@2x.png"; sourceTree = "<group>"; };
+		42E3D572201CBE2F008928CF /* scenery_bg3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scenery_bg3@3x.png"; sourceTree = "<group>"; };
+		42E3D575201CBF31008928CF /* scenery_bgName3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scenery_bgName3@2x.png"; sourceTree = "<group>"; };
+		42E3D576201CBF31008928CF /* scenery_bgName3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scenery_bgName3@3x.png"; sourceTree = "<group>"; };
+		42E3D57F201CD7F5008928CF /* MDLunarOrSolar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDLunarOrSolar.swift; sourceTree = "<group>"; };
 		42EE165B20186979004DCD4F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		42EE165C20186979004DCD4F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		42EE165D20186979004DCD4F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
@@ -571,6 +581,7 @@
 				42EE165A20186979004DCD4F /* SVProgressHUD */,
 				422799622014B900000A2CAC /* ColorUtils */,
 				4289D4CF2014792500CCC0E7 /* font */,
+				42E3D57F201CD7F5008928CF /* MDLunarOrSolar.swift */,
 			);
 			name = resource;
 			path = majorDays/resource;
@@ -645,6 +656,8 @@
 		429A14E1201B23C3001EB25E /* scenery */ = {
 			isa = PBXGroup;
 			children = (
+				42E3D575201CBF31008928CF /* scenery_bgName3@2x.png */,
+				42E3D576201CBF31008928CF /* scenery_bgName3@3x.png */,
 				429A14F8201B28B1001EB25E /* scenery_bgName2@2x.png */,
 				429A14F9201B28B1001EB25E /* scenery_bgName2@3x.png */,
 				429A14F1201B26E5001EB25E /* scenery_bgName1@2x.png */,
@@ -685,6 +698,8 @@
 		429A14E5201B23CC001EB25E /* scenery */ = {
 			isa = PBXGroup;
 			children = (
+				42E3D571201CBE2F008928CF /* scenery_bg3@2x.png */,
+				42E3D572201CBE2F008928CF /* scenery_bg3@3x.png */,
 				429A14F4201B2782001EB25E /* scenery_bg2@2x.png */,
 				429A14F5201B2783001EB25E /* scenery_bg2@3x.png */,
 				429A14EC201B2612001EB25E /* scenery_bg1@2x.png */,
@@ -963,6 +978,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				429A14F6201B2783001EB25E /* scenery_bg2@2x.png in Resources */,
+				42E3D578201CBF31008928CF /* scenery_bgName3@3x.png in Resources */,
 				4289D4CA2014434900CCC0E7 /* festival_bg1@3x.png in Resources */,
 				429A14F3201B26E5001EB25E /* scenery_bgName1@2x.png in Resources */,
 				429A14DA201B1BC2001EB25E /* wallpaper_bgName1@3x.png in Resources */,
@@ -970,12 +986,14 @@
 				4289D4C620143CA300CCC0E7 /* home_tj@3x.png in Resources */,
 				42A5D824201385DA00006B27 /* LaunchScreen.storyboard in Resources */,
 				429A14D5201B1BA4001EB25E /* cartoon_bgName1@3x.png in Resources */,
+				42E3D577201CBF31008928CF /* scenery_bgName3@2x.png in Resources */,
 				429A14FA201B28B1001EB25E /* scenery_bgName2@2x.png in Resources */,
 				429A14F7201B2783001EB25E /* scenery_bg2@3x.png in Resources */,
 				429A14DD201B1C6B001EB25E /* festival_bgName1@3x.png in Resources */,
 				4289D4C520143CA300CCC0E7 /* home_tj@2x.png in Resources */,
 				429A14D9201B1BC2001EB25E /* wallpaper_bgName1@2x.png in Resources */,
 				4289D4DB20148B6D00CCC0E7 /* tabbar_fh@2x.png in Resources */,
+				42E3D574201CBE2F008928CF /* scenery_bg3@3x.png in Resources */,
 				4289D4C120139A6100CCC0E7 /* wallpaper_bg1@2x.png in Resources */,
 				422799952014C341000A2CAC /* home_alljt@2x.png in Resources */,
 				429A14EF201B2612001EB25E /* scenery_bg1@3x.png in Resources */,
@@ -985,6 +1003,7 @@
 				429A14F2201B26E5001EB25E /* scenery_bgName1@3x.png in Resources */,
 				4289D4C92014434900CCC0E7 /* festival_bg1@2x.png in Resources */,
 				429A14EE201B2612001EB25E /* scenery_bg1@2x.png in Resources */,
+				42E3D573201CBE2F008928CF /* scenery_bg3@2x.png in Resources */,
 				4289D4DA20148B6D00CCC0E7 /* tabbar_fh@3x.png in Resources */,
 				422799962014C341000A2CAC /* home_alljt@3x.png in Resources */,
 				429A14C820187FD2001EB25E /* cartoon_bg1@2x.png in Resources */,
@@ -1067,6 +1086,7 @@
 				422799992014CA6E000A2CAC /* MDSetViewController.swift in Sources */,
 				4227999B2014D72C000A2CAC /* MDPasswordSafeViewController.swift in Sources */,
 				42EE166120186979004DCD4F /* SVProgressHUD.m in Sources */,
+				42E3D580201CD7F5008928CF /* MDLunarOrSolar.swift in Sources */,
 				4289D4D52014801100CCC0E7 /* MDLeftViewController.swift in Sources */,
 				42A5D84A2013869500006B27 /* MDBaseViewController.swift in Sources */,
 				4289D4B720138EDD00CCC0E7 /* MDBaseNavigationController.swift in Sources */,

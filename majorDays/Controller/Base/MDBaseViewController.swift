@@ -19,9 +19,13 @@ class MDBaseViewController: UIViewController {
         
         self.setSetup()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.bgImageView.image = UIImage(named: Constant.getThemeBGImage())
+    }
     func setSetup() {
         self.bgImageView = UIImageView()
-        self.bgImageView.image = UIImage(named: mainTheme)
         self.view.addSubview(self.bgImageView)
         
         self.leftBarButton = UIButton()

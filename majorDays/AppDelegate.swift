@@ -28,6 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LeanCloud.initialize(applicationID: LearnCloud_APPID, applicationKey: LearnCloud_APPKEY)
         self.createOnlyUserId()
         
+        if UserDefaults.standard.bool(forKey: "everLaunched") == true{
+            Constant.setThemeBGImage(imageName: mainTheme)
+        }else {
+            if Constant.getThemeBGImage() == "" {
+                Constant.setThemeBGImage(imageName: mainTheme)
+            }
+        }
         let home = MDHomeViewController()
         let nav = MDBaseNavigationController(rootViewController: home)
         nav.navigationBar.isTranslucent = true
