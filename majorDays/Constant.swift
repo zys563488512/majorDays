@@ -89,6 +89,33 @@ class Constant: NSObject {
         let nh = ceil(size.height)
         return CGSize(width: nw, height: nh)
     }
+//    //计算当月天数
+//    func getDaysInCurrentMonth(year:Int,month:Int) -> Int {
+////        let calendar = NSCalendar.currentCalendar()
+////
+////        let date = NSDate()
+////        let nowComps = calendar.components([.Year, .Month, .Day], fromDate: date)
+////        let year =  nowComps.year
+////        let month = nowComps.month
+//
+//        let startComps = NSDateComponents()
+//        startComps.day = 1
+//        startComps.month = month
+//        startComps.year = year
+//
+//        let endComps = NSDateComponents()
+//        endComps.day = 1
+//        endComps.month = month == 12 ? 1 : month + 1
+//        endComps.year = month == 12 ? year + 1 : year
+//
+//        let startDate = Calendar.dateComponents(startComps)
+////            .dateComponents(startComps)!
+//        let endDate = Calendar.dateComponents(endComps)!
+//
+//        let diff = Calendar.components(.Day, fromDate: startDate, toDate: endDate,
+//                                       options: .MatchFirst)
+//        return diff.day
+//    }
 }
 //let lanting_xi = "FZLanTingHeiS-EL-GB"
 //

@@ -161,5 +161,4 @@ class MDLunarOrSolar: NSObject {
         let g = SolarToInt(year: y, month: m, day: d)+offset-1
         return SolarFromInt(g: g)
     }
-//    http://www.hangge.com/blog/cache/detail_1843.html
 }

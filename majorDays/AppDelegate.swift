@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LeanCloud.initialize(applicationID: LearnCloud_APPID, applicationKey: LearnCloud_APPKEY)
         self.createOnlyUserId()
         
-        if UserDefaults.standard.bool(forKey: "everLaunched") == true{
+        if UserDefaults.standard.bool(forKey: "everLaunched") == false{
+            UserDefaults.standard.set(true, forKey: "everLaunched")
             Constant.setThemeBGImage(imageName: mainTheme)
         }else {
             if Constant.getThemeBGImage() == "" {

@@ -190,7 +190,8 @@ class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITab
             self.dismiss(animated: true, completion: nil)
             break
         case 1002:
-            
+            let vc = MDDatePickerView(frame: CGRect(x: 0, y:  KScreenHeight - 150, width: KScreenWidth, height: 150))
+            self.view.addSubview(vc)
             break
         default:
             break

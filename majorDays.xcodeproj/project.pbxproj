@@ -14,6 +14,7 @@
 		422799962014C341000A2CAC /* home_alljt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 422799942014C341000A2CAC /* home_alljt@3x.png */; };
 		422799992014CA6E000A2CAC /* MDSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422799982014CA6E000A2CAC /* MDSetViewController.swift */; };
 		4227999B2014D72C000A2CAC /* MDPasswordSafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227999A2014D72C000A2CAC /* MDPasswordSafeViewController.swift */; };
+		422D8611201CDC2D00B623FD /* MDDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D8610201CDC2D00B623FD /* MDDatePickerView.swift */; };
 		4289D4B720138EDD00CCC0E7 /* MDBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4289D4B620138EDD00CCC0E7 /* MDBaseNavigationController.swift */; };
 		4289D4B92013958100CCC0E7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4289D4B82013958100CCC0E7 /* Constant.swift */; };
 		4289D4C120139A6100CCC0E7 /* wallpaper_bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4289D4BF20139A6000CCC0E7 /* wallpaper_bg1@2x.png */; };
@@ -87,6 +88,7 @@
 		422799942014C341000A2CAC /* home_alljt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_alljt@3x.png"; sourceTree = "<group>"; };
 		422799982014CA6E000A2CAC /* MDSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDSetViewController.swift; sourceTree = "<group>"; };
 		4227999A2014D72C000A2CAC /* MDPasswordSafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDPasswordSafeViewController.swift; sourceTree = "<group>"; };
+		422D8610201CDC2D00B623FD /* MDDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDDatePickerView.swift; sourceTree = "<group>"; };
 		4289D4B620138EDD00CCC0E7 /* MDBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBaseNavigationController.swift; sourceTree = "<group>"; };
 		4289D4B82013958100CCC0E7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4289D4BF20139A6000CCC0E7 /* wallpaper_bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallpaper_bg1@2x.png"; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 				422799622014B900000A2CAC /* ColorUtils */,
 				4289D4CF2014792500CCC0E7 /* font */,
 				42E3D57F201CD7F5008928CF /* MDLunarOrSolar.swift */,
+				422D8610201CDC2D00B623FD /* MDDatePickerView.swift */,
 			);
 			name = resource;
 			path = majorDays/resource;
@@ -1097,6 +1100,7 @@
 				429A14C320187983001EB25E /* MDThemeListController.swift in Sources */,
 				42A5D84F2013874100006B27 /* MDHomeViewController.swift in Sources */,
 				42A5D817201385DA00006B27 /* AppDelegate.swift in Sources */,
+				422D8611201CDC2D00B623FD /* MDDatePickerView.swift in Sources */,
 				4289D4B92013958100CCC0E7 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
