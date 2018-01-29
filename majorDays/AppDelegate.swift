@@ -12,6 +12,7 @@ import LeanCloud
 import SnapKit
 import GDPerformanceView_Swift
 import KeychainSwift
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GDPerformanceMonitor.sharedInstance.startMonitoring()
 //        self.performanceView = GDPerformanceMonitor.init()
 //        self.performanceView?.startMonitoring()
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        IQKeyboardManager.sharedManager().enable = true
         
         // applicationId 即 App Id，applicationKey 是 App Key2
         LeanCloud.initialize(applicationID: LearnCloud_APPID, applicationKey: LearnCloud_APPKEY)

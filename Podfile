@@ -11,5 +11,5 @@ target 'majorDays' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'GDPerformanceView-Swift', '~> 1.3.2'
   pod 'KeychainSwift', '~> 9.0.0'
-  
+  pod 'IQKeyboardManagerSwift', '~> 5.0'
 end

@@ -11,6 +11,7 @@ import UIKit
 class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITableViewDelegate {
     var tableView : UITableView!
     var titleText : UITextField!
+    var isTopSwitch : UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -134,21 +135,13 @@ class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITab
             leftLabel.textColor = UIColor.black
             leftLabel.text = "置顶"
             
-            let reightlabel = UILabel(frame: CGRect(x: KScreenWidth - 110, y: 0, width: 80, height: 43))
-            reightlabel.textAlignment = .right
-            reightlabel.textColor = UIColor(string: "#8c8c8c")
-            reightlabel.font = UIFont.systemFont(ofSize: 12)
-            reightlabel.text = "全部订单"
-            
-            let reightImage = UIImageView(frame: CGRect(x: KScreenWidth - 20, y: 17, width: 4.5, height: 8.5))
-            reightImage.image = UIImage(named: "home_alljt")
-            
+            self.isTopSwitch = UISwitch(frame: CGRect(x: KScreenWidth - 70, y: (43 - 43 * 0.7)/2, width: 80, height: 43))
+            self.isTopSwitch.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
             let lineLabel = UILabel(frame: CGRect(x: 0, y: 43, width: KScreenWidth, height: 1))
             lineLabel.backgroundColor = Constant.bgGrayColor()
             
             cell.contentView.addSubview(leftLabel)
-            cell.contentView.addSubview(reightlabel)
-            cell.contentView.addSubview(reightImage)
+            cell.contentView.addSubview(self.isTopSwitch)
             cell.contentView.addSubview(lineLabel)
             break
         case 6:
