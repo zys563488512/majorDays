@@ -12,6 +12,7 @@ class MDDatePickerView: UIView,UIPickerViewDataSource,UIPickerViewDelegate {
     var titleView : UIView!
     var datePicker : UIDatePicker!
     var datePicker1 : UIPickerView!
+    var dayCount = 30
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.white
@@ -27,13 +28,15 @@ class MDDatePickerView: UIView,UIPickerViewDataSource,UIPickerViewDelegate {
 //        self.datePicker.datePickerMode = .date
 //        self.datePicker.locale = Locale(identifier: "zh_CN")
 //        self.addSubview(self.datePicker)
-        
+        let nowDate = Constant.getNowYearMonthDay()
+        let arr = nowDate.components(separatedBy: "-") as NSArray
         self.datePicker1 = UIPickerView()
-        self.datePicker1.selectRow(3, inComponent: 2, animated: true)
         self.datePicker1.dataSource = self
         self.datePicker1.delegate = self
         self.addSubview(self.datePicker1)
-        
+        self.datePicker1.selectRow(Int(arr[0] as! String)! - 1900, inComponent: 0, animated: true)
+        self.datePicker1.selectRow(Int(arr[1] as! String)! - 1, inComponent: 1, animated: true)
+        self.datePicker1.selectRow(Int(arr[2] as! String)! - 1, inComponent: 2, animated: true)
         self.titleView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.left.equalTo(0)
