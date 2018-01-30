@@ -116,30 +116,53 @@ class Constant: NSObject {
 //        return diff.day
 //    }
     //计算指定月天数
-//    func getDaysInMonth( year: Int, month: Int) -> Int
-//    {
-//        let calendar = NSCalendar.current
-//
-//        let startComps = NSDateComponents()
-//        startComps.day = 1
-//        startComps.month = month
-//        startComps.year = year
-//
-//        let endComps = NSDateComponents()
-//        endComps.day = 1
-//        endComps.month = month == 12 ? 1 : month + 1
-//        endComps.year = month == 12 ? year + 1 : year
-//
-//        let startDate = calendar.date(from: startComps as DateComponents)!
-////        dateComponents(startComps)!
-//        let endDate = calendar.date(from: endComps as DateComponents)!
-//        dateComponents(endComps)!
-        
-//        let diff = calendar.dateComponents(Calendar.Component.day, from: startDate, to: endDate)
-//            .components(.Day, fromDate: startDate, toDate: endDate,
-//                                       options: .MatchFirst)
-//        return diff.day
-//    }
+    class func getDaysInMonth( year: Int, month: Int) -> Int
+    {
+        var sum = 0
+        switch month {
+        case 1 :
+            sum = 31
+            break
+        case 2 :
+            sum = 28
+            break
+        case 3 :
+            sum = 31
+            break
+        case 4 :
+            sum = 30
+        case 5 :
+            sum = 31
+            break
+        case 6 :
+            sum = 30
+            break
+        case 7 :
+            sum = 31
+            break
+        case 8 :
+            sum = 31
+            break
+        case 9 :
+            sum = 30
+            break
+        case 10 :
+            sum = 31
+            break
+        case 11 :
+            sum = 30
+            break
+        case 12 :
+            sum = 31
+        default :
+            print("输入错误")
+        }
+        if (year % 4 == 0 || (year % 400 == 0 && year % 100 != 0)) && (month == 2) {
+            print("闰年")
+            sum += 1
+        }
+        return sum
+    }
 }
 //let lanting_xi = "FZLanTingHeiS-EL-GB"
 //

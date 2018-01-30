@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITableViewDelegate {
+class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITableViewDelegate,MDDatePickerDelegate {
     var tableView : UITableView!
     var titleText : UITextField!
     var isTopSwitch : UISwitch!
@@ -37,6 +37,13 @@ class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITab
             make.height.equalTo(KScreenHeight - 64)
         }
         
+    }
+    func getDateP(isCenel: Bool, isType: Bool, currYear: Int, currMonth: Int, currDay: Int) {
+        if isCenel {
+            
+        }else {
+            
+        }
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -175,7 +182,11 @@ class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITab
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if indexPath.row == 2 {
+            let vc = MDDatePickerView(frame: CGRect(x: 0, y:  KScreenHeight - 150, width: KScreenWidth, height: 150))
+           vc.show()
+            
+        }
     }
     @objc func addEvent(btn:UIButton) {
         switch btn.tag {
@@ -183,8 +194,7 @@ class MDAddEventViewController: MDBaseViewController,UITableViewDataSource,UITab
             self.dismiss(animated: true, completion: nil)
             break
         case 1002:
-            let vc = MDDatePickerView(frame: CGRect(x: 0, y:  KScreenHeight - 150, width: KScreenWidth, height: 150))
-            self.view.addSubview(vc)
+            
             break
         default:
             break
